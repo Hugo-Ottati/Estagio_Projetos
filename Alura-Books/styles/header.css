@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins&family=REM:wght@300&family=Roboto+Slab:wght@400;700&display=swap");
+
+.cabecalho__menu-hamburguer {
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/Menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  display: inline-block;
+}
+
+.cabecalho {
+  background-color: var(--branco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container__navbar {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.container__side-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.container__imagem {
+  padding: 0.5rem;
+}
+
+.lista-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 60vw;
+}
+
+.container__botao:checked ~ .lista-menu {
+  display: block;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1rem;
+  background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+  color: var(--laranja);
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.lista-menu__link {
+  background: var(--azul-degrade);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.container__botao {
+  display: none;
+}
+
+.container__titulo {
+  display: none;
+}
+
+.opcoes {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .container__titulo {
+    color: (--preto);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+  }
+
+  .container__titulo-negrito {
+    color: (--preto);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .opcoes {
+    display: flex;
+    /* gap: rem; */
+    text-transform: uppercase;
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .opcoes__itens{
+    padding: 0 1rem;
+  }
+
+  .opcoes__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--preto);
+  }
+
+  .cabecalho__menu-hamburguer {
+    display: none;
+  }
+
+  .opcoes__botao:checked~.lista-menu{
+    display: block;
+    width: auto;
+  }
+ 
+  .opcoes__botao{
+  display: none;
+  }
+
+  .lista-menu:hover{
+    background: var(--azul-degrade);
+  }
+}
