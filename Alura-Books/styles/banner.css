@@ -52,3 +52,52 @@
   background-position: 2.25rem;
   padding: 0 1.5rem;
 }
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    padding-bottom: 5rem;
+  }
+
+  .banner__titulo {
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .banner__texto {
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .banner__pesquisa {
+    color: var(--branco);
+    font-family: var(--fonte-principal2);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+
+.banner__pesquisa{
+  width: 70%;
+}
+
+.banner{
+  padding: 5rem;
+}
+
+
+}

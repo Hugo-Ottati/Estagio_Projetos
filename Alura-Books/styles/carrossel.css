@@ -40,7 +40,7 @@
   display: flex;
 }
 
-.botoes__item{
+.botoes__item {
   margin: 0 0.5em;
 }
 
@@ -94,3 +94,42 @@
   background-color: var(--laranja);
 }
 
+/* Responsividade para Tablets */
+@media screen and (min-width: 1024px) {
+  
+  .carrossel__titulo {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .swiper{
+    width: 65%;;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 5rem !important;
+  }
+
+  .swiper-wrapper{
+    margin: 2rem 0 2rem 0;
+  }
+
+  .card{
+    margin: 2rem 3rem;
+    
+  }
+}
+
+@media screen and (max-width: 1920px){
+ 
+  .carrossel__container{
+    text-decoration: none;
+    display: flex;
+    margin: 0 20vw 3rem 20vw;
+  }
+
+}

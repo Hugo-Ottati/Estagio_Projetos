@@ -86,7 +86,16 @@
   display: none;
 }
 
+.container__texto{
+  display: none;
+}
+
 @media screen and (min-width: 1024px) {
+  
+  .cabecalho{
+    padding: 0 2rem;
+  }
+  
   .container__titulo {
     color: (--preto);
     font-family: var(--fonte-secundaria);
@@ -108,7 +117,6 @@
 
   .opcoes {
     display: flex;
-    /* gap: rem; */
     text-transform: uppercase;
     color: var(--preto);
     font-family: var(--fonte-principal);
@@ -118,7 +126,7 @@
     line-height: normal;
   }
 
-  .opcoes__itens{
+  .opcoes__itens {
     padding: 0 1rem;
   }
 
@@ -132,16 +140,72 @@
     display: none;
   }
 
-  .opcoes__botao:checked~.lista-menu{
+  .opcoes__botao:checked ~ .lista-menu {
     display: block;
     width: auto;
   }
- 
-  .opcoes__botao{
-  display: none;
+
+  .opcoes__botao {
+    display: none;
   }
 
-  .lista-menu:hover{
+  .lista-menu:hover {
     background: var(--azul-degrade);
+  }
+
+  .container__texto{
+    display: block;
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+  }
+
+  .container__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none; 
+  }
+
+  .container__imagem-transparente {
+    display: none;
+  }
+
+}
+
+/* Estilos aplicados quando a largura da tela é igual ou menor que 1728px */
+@media screen and (min-width: 1920px) {
+  
+  .cabecalho{
+    padding: 0 2rem;
+  }
+
+  .opcoes{ 
+    margin: auto;
+  }
+  
+  .container__imagem-transparente {
+    display: none;
+  }
+
+  .container__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none; 
+  }
+
+  .container__texto {
+    color: var(--preto);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
   }
 }
